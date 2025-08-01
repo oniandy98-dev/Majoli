@@ -1,15 +1,108 @@
-<img src="melek.png" alt="Logo de la tienda" width="150">
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Majoli</title>
+  <title>Mi Tienda Cosmética</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #fff; }
+    header {
+      background-color: #000;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .portada {
+      background-image: url('portada.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .producto {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .boton {
+      margin-top: 10px;
+      background-color: #e6007e;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .boton:hover {
+      background-color: #c6006b;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenidos a mi tienda</h1>
-  <p>Tenemos los mejores productos de belleza.</p>
+
+  <header>
+    <img src="logo.png" alt="Logo" height="40">
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="portada">
+    Descubre tu belleza
+  </div>
+
+  <section id="productos" class="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="https://ejemplo.com/labial.jpg" alt="Labial">
+      <h3>Labial Mate</h3>
+      <p>Precio: 35 Bs</p>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20el%20Labial%20Mate" target="_blank">
+        <button class="boton">Comprar</button>
+      </a>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="https://ejemplo.com/base.jpg" alt="Base">
+      <h3>Base Líquida</h3>
+      <p>Precio: 50 Bs</p>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20la%20Base%20Líquida" target="_blank">
+        <button class="boton">Comprar</button>
+      </a>
+    </div>
+  </section>
+
+  <footer id="contacto" style="text-align:center; padding: 20px; background:#eee;">
+    <p>© 2025 Mi Tienda Cosmética - Todos los derechos reservados</p>
+    <p>Instagram | WhatsApp | TikTok</p>
+  </footer>
+
 </body>
 </html>
-<head>: <style>body { background-color: #FF008E; }</style>
-<ul><li>Labial</li><li>Crema</li><li>Perfume</li></ul>
