@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>Majoli cosméticos</title>
   <style>
+<script>
+  function filtrar(categoria) {
+    const productos = document.querySelectorAll('.producto');
+    productos.forEach(producto => {
+      if (categoria === 'todos') {
+        producto.style.display = 'block';
+      } else {
+        producto.style.display = producto.classList.contains(categoria) ? 'block' : 'none';
+      }
+    });
+  }
+</script>
     body { margin: 0; font-family: sans-serif; background-color: #fff; }
     header {
       background-color: #000;
