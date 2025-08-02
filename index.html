@@ -1,64 +1,66 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="es">
+<!-- index.html avanzado estilo Maybelline --><!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Tienda de Cosméticos</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
+  <header class="encabezado">
     <img src="logo.png" alt="Logo" class="logo">
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
       <a href="#contacto">Contacto</a>
     </nav>
-  </header>
-
-  <section class="slider">
+  </header>  <section class="slider" id="inicio">
+    <button id="prev-slide">❮</button>
     <img class="slide active" src="portada1.jpg" alt="Slide 1">
     <img class="slide" src="portada2.jpg" alt="Slide 2">
     <img class="slide" src="portada3.jpg" alt="Slide 3">
-  </section>
-
-  <section id="filtros">
+    <button id="next-slide">❯</button>
+  </section>  <section id="filtros" class="filtros">
     <button onclick="filtrar('todos')">Todos</button>
     <button onclick="filtrar('labial')">Labiales</button>
     <button onclick="filtrar('base')">Bases</button>
     <button onclick="filtrar('sombra')">Sombras</button>
-  </section>
-
-  <section id="productos">
+    <button onclick="filtrar('accesorio')">Accesorios</button>
+  </section>  <section id="productos" class="productos">
     <div class="producto labial">
-      <img src="labial.jpg" alt="Labial">
+      <img src="labial.jpg" alt="Labial Mate">
       <h3>Labial Mate</h3>
       <p>Precio: 35 Bs</p>
-      <a href="https://wa.me/591XXXXXXX?text=Quiero%20el%20Labial%20Mate" target="_blank">
-        <button class="boton">Comprar</button>
-      </a>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20el%20Labial%20Mate" target="_blank"><button>Comprar</button></a>
     </div>
     <div class="producto base">
-      <img src="base.jpg" alt="Base">
+      <img src="base.jpg" alt="Base Líquida">
       <h3>Base Líquida</h3>
       <p>Precio: 50 Bs</p>
-      <a href="https://wa.me/591XXXXXXX?text=Quiero%20la%20Base%20Líquida" target="_blank">
-        <button class="boton">Comprar</button>
-      </a>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20la%20Base%20Líquida" target="_blank"><button>Comprar</button></a>
     </div>
     <div class="producto sombra">
-      <img src="sombra.jpg" alt="Sombra">
+      <img src="sombra.jpg" alt="Sombra Compacta">
       <h3>Sombra Compacta</h3>
       <p>Precio: 28 Bs</p>
-      <a href="https://wa.me/591XXXXXXX?text=Quiero%20la%20Sombra%20Compacta" target="_blank">
-        <button class="boton">Comprar</button>
-      </a>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20la%20Sombra%20Compacta" target="_blank"><button>Comprar</button></a>
     </div>
-  </section>
-
-  <footer>
+    <div class="producto accesorio">
+      <img src="espejo.jpg" alt="Espejo Compacto">
+      <h3>Espejo Compacto</h3>
+      <p>Precio: 20 Bs</p>
+      <a href="https://wa.me/591XXXXXXX?text=Quiero%20el%20Espejo%20Compacto" target="_blank"><button>Comprar</button></a>
+    </div>
+  </section>  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formulario-contacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje-exito" style="display:none; color:green;">¡Mensaje enviado con éxito!</p>
+  </section>  <footer class="pie">
     <p>© 2025 Mi Tienda Cosmética - Todos los derechos reservados</p>
     <div class="social-icons">
       <a href="https://wa.me/591XXXXXXX" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
@@ -66,8 +68,5 @@
       <a href="https://instagram.com/TUUSUARIO" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
       <a href="https://tiktok.com/@TUUSUARIO" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/3046/3046120.png" alt="TikTok"></a>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  </footer>  <script src="script.js"></script></body>
 </html>
