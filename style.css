@@ -1,0 +1,56 @@
+/* style.css profesional para tienda de cosméticos */
+
+body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #fff8f6; color: #333; }
+
+header.encabezado { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f5e0e4; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000; }
+
+.logo { height: 60px; }
+
+nav a { margin: 0 15px; text-decoration: none; color: #d63384; font-weight: 600; }
+
+nav a:hover { color: #8e2c6b; }
+
+.slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; margin-bottom: 40px; }
+
+.slide { display: none; width: 100%; height: auto; }
+
+.slide.active { display: block; }
+
+#prev-slide, #next-slide { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 10px; cursor: pointer; }
+
+#prev-slide { left: 10px; }
+
+#next-slide { right: 10px; }
+
+.filtros { display: flex; justify-content: center; gap: 15px; margin: 20px 0; }
+
+.filtros button { background-color: #d63384; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+
+.filtros button:hover { background-color: #8e2c6b; }
+
+.productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; padding: 20px; }
+
+.producto { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); padding: 15px; text-align: center; }
+
+.producto img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+
+.producto button { background-color: #d63384; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+
+.producto button:hover { background-color: #8e2c6b; }
+
+.contacto { background-color: #fce4ec; padding: 40px 20px; text-align: center; }
+
+.contacto form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+
+.contacto input, .contacto textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+
+.contacto button { background-color: #d63384; color: white; border: none; padding: 12px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+
+.contacto button:hover { background-color: #8e2c6b; }
+
+footer.pie { background-color: #f5e0e4; text-align: center; padding: 20px; margin-top: 40px; font-size: 14px; }
+
+.social-icons img { margin: 0 10px; vertical-align: middle; transition: transform 0.3s; }
+
+.social-icons img:hover { transform: scale(1.2); }
+
